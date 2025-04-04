@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Elizabeth Wafula | Portfolio</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f7f7f7;
+      color: #333;
+    }
+
+    header {
+      background-color: #2196f3;
+      color: white;
+      padding: 2rem;
+      text-align: center;
+      animation: fadeInDown 1s ease-in-out;
+      position: relative;
+    }
+
+    header::before {
+      content: '';
+      background-image: url('https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1920&q=80');
+      background-size: cover;
+      background-position: center;
+      opacity: 0.3;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      position: absolute;
+      z-index: 0;
+    }
+
+    header h1 {
+      position: relative;
+      z-index: 1;
+    }
+
+    nav {
+      background-color: #333;
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      padding: 1rem;
+      flex-wrap: wrap;
+      animation: fadeIn 2s ease;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      padding: 0.5rem 1rem;
+      background-color: #555;
+      border-radius: 5px;
+      transition: background-color 0.3s ease, transform 0.3s ease;
+    }
+
+    nav a:hover {
+      background-color: #888;
+      transform: scale(1.1);
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 2rem auto;
+      background: #fff;
+      padding: 2rem;
+      border-radius: 12px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+      animation: fadeInUp 1.5s ease-in-out;
+    }
+
+    h2 {
+      color: #2196f3;
+      border-bottom: 1px solid #ccc;
+      padding-bottom: 0.5rem;
+      margin-top: 2rem;
+    }
+
+    ul {
+      padding-left: 1.2rem;
+    }
+
+    li {
+      margin: 0.5rem 0;
+    }
+
+    .projects a {
+      color: #2196f3;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .projects a:hover {
+      text-decoration: underline;
+    }
+
+    .cv-btn {
+      display: inline-block;
+      margin-top: 1rem;
+      background-color: #2196f3;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 6px;
+      text-decoration: none;
+      transition: 0.3s ease-in-out;
+    }
+
+    .cv-btn:hover {
+      background-color: #1976d2;
+      transform: scale(1.05);
+    }
+
+    footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 2rem;
+    }
+
+    @keyframes fadeInDown {
+      0% { opacity: 0; transform: translateY(-40px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes fadeInUp {
+      0% { opacity: 0; transform: translateY(40px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    .contact-form {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+      padding: 1rem;
+      font-size: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      resize: none;
+    }
+
+    .contact-form button {
+      background-color: #2196f3;
+      color: white;
+      border: none;
+      padding: 1rem;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .contact-form button:hover {
+      background-color: #1976d2;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Elizabeth Wafula | Portfolio</h1>
+  </header>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+    <a href="cv/elizabeth_wafula_cv.pdf" download class="cv-btn">Download CV</a>
+  </nav>
+
+  <div class="container">
+    <section id="about">
+      <h2>About Me</h2>
+      <p>
+        I'm Elizabeth Wafula, a passionate IT professional focused on creating innovative solutions through technology. I specialize in networking, web development, and cloud computing. With hands-on experience in various fields, I aim to solve real-world problems with efficient and scalable tech solutions.
+      </p>
+      <p>
+        I take pride in crafting intuitive web applications and optimizing cloud environments to enhance productivity. Whether it's designing secure network infrastructure or extracting insights through data analytics, I’m committed to making technology work for people.
+      </p>
+    </section>
+
+    <section id="skills">
+      <h2>Skills</h2>
+      <ul>
+        <li>Web Development (HTML, CSS, JavaScript)</li>
+        <li>Cloud Computing (AWS, Azure)</li>
+        <li>Networking & Cybersecurity</li>
+        <li>Data Analytics</li>
+        <li>Graphic & Logo Design</li>
+      </ul>
+    </section>
+
+    <section id="projects">
+      <h2>Projects</h2>
+      <ul class="projects">
+        <li><a href="#">Hackathon Project</a> – A web app using HTML, CSS, JS, and MySQL.</li>
+        <li><a href="#">Web Design Portfolio</a> – Creative and mobile-first designs.</li>
+        <li><a href="#">Cloud Cost Optimizer</a> – An AWS-powered dashboard that monitors and reduces infrastructure costs.</li>
+        <li><a href="#">Network Simulation</a> – A packet tracer project showcasing secure topology design and subnetting.</li>
+        <li><a href="#">E-commerce Site</a> – Developed a responsive online store with integrated payment gateway.</li>
+      </ul>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:lizwafula01@gmail.com">lizwafula01@gmail.com</a></p>
+      <p>LinkedIn: <a href="https://www.linkedin.com/in/lizwafula001" target="_blank">Elizabeth Wafula</a></p>
+      <h3>Send a Message</h3>
+      <form class="contact-form">
+        <input type="text" placeholder="Your Name" required/>
+        <input type="email" placeholder="Your Email" required/>
+        <textarea placeholder="Your Message" rows="4" required></textarea>
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+  </div>
+
+  <footer>
+    &copy; 2025 Elizabeth Wafula. All rights reserved.
+  </footer>
+
+</body>
+</html>
